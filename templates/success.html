@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Created</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: white;
+            padding: 35px;
+            border-radius: 10px;
+            width: 420px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .success {
+            color: #28a745;
+            margin-bottom: 20px;
+        }
+
+        .info {
+            text-align: left;
+            margin-top: 15px;
+        }
+
+        .info p {
+            margin: 8px 0;
+        }
+
+        .home-btn {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 16px;
+            border-radius: 5px;
+        }
+
+        .home-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2 class="success">✅ Student Successfully Created</h2>
+
+        <h3>Student Information</h3>
+
+        <div class="info">
+            <p><b>Name:</b> {{ student.name }}</p>
+            <p><b>Student ID:</b> {{ student.student_id }}</p>
+            <p><b>Email:</b> {{ student.email }}</p>
+            <p><b>Department:</b> {{ student.dept }}</p>
+            <p><b>Phone:</b> {{ student.phone }}</p>
+            <p><b>Address:</b> {{ student.address }}</p>
+        </div>
+
+        <a class="home-btn" href="/">🏠 Back to Home</a>
+
+    </div>
+
+</body>
+
+</html>

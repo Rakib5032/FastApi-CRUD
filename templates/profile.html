@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Profile</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            width: 400px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .profile-row {
+            margin-bottom: 12px;
+            font-size: 16px;
+        }
+
+        .label {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .value {
+            color: #555;
+        }
+
+        .home-link {
+            display: block;
+            text-align: center;
+            margin-top: 25px;
+            text-decoration: none;
+            color: white;
+            background-color: #007BFF;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .home-link:hover {
+            background-color: #0056b3;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>Student Profile</h2>
+
+        <!-- <div class="profile-row">
+            <span class="label">ID:</span>
+            <span class="value">{{ a.id }}</span>
+        </div> -->
+
+        <div class="profile-row">
+            <span class="label">Name:</span>
+            <span class="value">{{ a.name }}</span>
+        </div>
+
+        <div class="profile-row">
+            <span class="label">Student ID:</span>
+            <span class="value">{{ a.student_id }}</span>
+        </div>
+
+        <div class="profile-row">
+            <span class="label">Email:</span>
+            <span class="value">{{ a.email }}</span>
+        </div>
+
+        <div class="profile-row">
+            <span class="label">Department:</span>
+            <span class="value">{{ a.dept }}</span>
+        </div>
+
+        <div class="profile-row">
+            <span class="label">Year:</span>
+            <span class="value">{{ a.year }}</span>
+        </div>
+        <div class="profile-row">
+            <span class="label">Phone:</span>
+            <span class="value">{{ a.phone }}</span>
+        </div>
+
+        <div class="profile-row">
+            <span class="label">Address:</span>
+            <span class="value">{{ a.address }}</span>
+        </div>
+
+        <a class="home-link" href="/">Back to Home</a>
+
+    </div>
+
+</body>
+
+</html>
